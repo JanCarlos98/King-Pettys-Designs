@@ -1,51 +1,74 @@
 body, html{}
 
 header{
+	
+}
 
+header .top-bar{
+	background-color: #EEF342;
+	height:5rem;
 }
 
 body{
-	background-color: #e5e5e5;
-
+	background-color: #EEF342;
+	text-align: center;
 	
 }
+.kp{
+	max-width:350pt;
+	overflow: hidden;
+}
 
+
+header .logo{
+	max-height: 5em
 	
 }
-.side-nav{
-	background-color: transparent;
+h4{
+	text-align:center;
 }
-.logo{
-	max-height: 2em;
-	
+h4 a{
+	font-size: 20pt;
+	text-align: center;
+	color: green;
+}
+
+.product-grid-main{
+	padding:3rem 0;
+	background:url(../img/hood-mesh.jpg);
 }
 
 
+.top-bar-section li:not(.has-form) a:not(.button){
+	background-color:#EEF342 ;	
+	color:black;
+}
 
+.top-bar-section li:not(.has-form) a:not(.button):hover{
+	background-color:#EEF342;
+	color:green;
 }
-.side-nav a{
-	background-color:#474747;
+
+.top-bar-section li.active:not(.has-form) a:not(.button){
+	background-color:#EEF342;
 }
-.side-nav li a:not(.button):hover, .side-nav li a:not(.button):focus {
-    background-color: none;
-    color: yellow;
-}
+
 
 
 .face{
-	max-width: 200pt;
+	max-width: 350pt;
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
-	height: 200%;
-	position:relative;
+	height: 50%;
+	position: relative;
 }
-.background{
-	width: 100%;
-	overflow: hidden;
-	position:absolute;
-	background-size: cover;
+.links{
+	text-align: center;
 }
+
+
+
 
 // Small screens
 @media only screen { } /* Define mobile styles */
@@ -70,11 +93,13 @@ body{
 // XXLarge screens
 @media only screen and (min-width: 120.063em) { } /* min-width 1921px, xxlarge screens */
 
+
 footer{
-	bottom:0;
-	position: fixed;
 	background-color:black;
 	color:white;
-	left:0;
-	width: 100%;
+	text-align: center
+}
+
+footer p {
+	margin-bottom:0;
 }
